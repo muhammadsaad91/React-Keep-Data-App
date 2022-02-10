@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Keep-Data-App/static/css/main.46b4fb24.css",
+    "main.js": "/React-Keep-Data-App/static/js/main.926f0ba3.js",
+    "index.html": "/React-Keep-Data-App/index.html",
+    "main.46b4fb24.css.map": "/React-Keep-Data-App/static/css/main.46b4fb24.css.map",
+    "main.926f0ba3.js.map": "/React-Keep-Data-App/static/js/main.926f0ba3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46b4fb24.css",
+    "static/js/main.926f0ba3.js"
+  ]
+}
