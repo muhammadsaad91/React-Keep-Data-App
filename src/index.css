@@ -161,6 +161,7 @@
        /* border: 2px solid rebeccapurple; */
        border-bottom:dotted black ;
        padding: 2px;
+       height: 3rem;
 
   }
   .content{
@@ -185,7 +186,7 @@
         height: 3rem;
         width: 3rem;
         /* position: relative; */
-        /* top: -8px; */
+        top: -5rem;
         left: 85%;
         border-radius: 100%;
         color: rgb(255, 102, 0);

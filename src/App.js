@@ -1,4 +1,4 @@
-import React ,{ useState } from  "react";
+import React, { useState } from "react";
 import "./index.css";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -6,30 +6,50 @@ import Input from "./Input";
 import Answer from "./Answer";
 
 const App = () => {
-    const [userInput, setUserInput] = useState([]);
-    const submit = (value) => {
-    //    alert("Hello");
-       setUserInput((oldval) => {
-           return [...oldval, value];
-        });
-           console.log(userInput);
-
+    const [answer, setAnswer] = useState([]);
+    const add = (val) => {
+        setAnswer((old) => {
+            return (
+                [...old, val]
+            )
+        })
+         alert("Title: " + val.title + " " + " Added")
     }
- return(
-     <>
-     
-     <div className="Main-div">
-     <Header />
-     <Input clicked={submit} />
-     <div className="ans-flex">
-     {userInput.map((value, index) => {
-            return <Answer key={index} id={index} title={value.title} content={value.content} />
-     }
-    )}
-        </div>
-     <Footer/>
-     </div>
-     </>
- )
+    const onDele=(e)=>{
+        setAnswer((old)=>
+        old.filter((val,ind)=>{
+            return ind !== e ;
+        })
+        )
+        let a=e+1
+        alert(' box ' + a + " Deleted ");
+    }
+
+    return (
+        <>
+
+            <div className="Main-div">
+                <Header />
+                <Input clicked={add} />
+                <div className="ans-flex">
+                    {answer.map((val, index) => {
+                        return (
+                            <Answer 
+                            id={index} 
+                            key={index}
+                            title={val.title} 
+                            content={val.content} 
+                            deleted={onDele} 
+                            id1={index+1}/>
+                        )
+                    })
+                    }
+
+
+                </div>
+                <Footer />
+            </div>
+        </>
+    );
 }
-export  default App ;
+export default App;
