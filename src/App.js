@@ -22,7 +22,7 @@ const App = () => {
         })
         )
         let a=e+1
-        alert(' box ' + a + " Deleted ");
+        alert(' Box ' + a + " Deleted Successfully");
     }
 
     return (

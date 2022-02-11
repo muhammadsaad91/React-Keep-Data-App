@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 const Input = (props) => {
+    const [show, setShow] = useState(false);
     const [value , setValue] = useState({
         title:'',
         content:''
@@ -25,30 +26,36 @@ const click=()=>{
         content: ''
     });
 }
-
+const shrink=()=>{
+    setShow(false);
+}
+const expand=()=>{
+    setShow(true);
+}
     return (
         <>
-            <div className="input-flex">
-                <div className="quesans">
-                    <input 
-                    type="text"
-                     name="title" 
-                     id="" 
-                     placeholder="Title" 
-                     onChange={change} 
-                     value={value.title} />
+            <div className="input-flex" onDoubleClick={shrink}>
+                <div className="quesans" onClick={expand}>
+                {show ? 
+                     <input 
+                     type="text"
+                      name="title" 
+                      id="" 
+                      placeholder="Title" 
+                      onChange={change} 
+                      value={value.title} /> : null }
                     
                     <textarea 
                     name="content" 
                     id="" cols="43" 
                     placeholder="Write a note..." 
-                    rows="6" 
+                    rows="3" 
                     onChange={change} 
                     value={value.content} ></textarea>
                     <div className="btn-flex">
 
-                        <button onClick={click}>+</button></div>
-                </div>
+                        {show ? <button onClick={click}>+</button> : null}
+                </div></div>
             </div>
         </>
     )
