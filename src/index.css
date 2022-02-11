@@ -136,30 +136,26 @@
     justify-content: center;  
   }
   .answer-div{
-    border: 2px solid white;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px ;
     color: rgb(6, 36, 36);
     margin: 1rem;
     background-color: rgb(250, 241, 229);
-    font-size: 1.2rem;
-    font-weight: bold;
-    width: 18%;
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
+    width: 20rem;
+    height: 10rem;
     box-shadow: 8px 8px 18px grey;
-  border-radius: 10px ;
-  padding: 1rem;
+    padding: 1rem;
   }
   .ans-flex{
     /* border: 2px solid rgb(19, 4, 4); */
+    /* height: 100%; */
+    width: 100%;
     margin: 3rem;
     display: flex;
     flex-direction: row;
-    /* gap: 10rem; */
-    /* overflow: hidden; */
+    /* overflow: none; */
     flex-wrap: wrap;
-    overflow: none;
-    height: auto;
+    justify-content: center;
   }
   .head-ans{
        /* border: 2px solid rebeccapurple; */
@@ -167,15 +163,30 @@
        padding: 2px;
 
   }
-  .answer-div button{
+  .content{
+    /* border: 2px solid rgb(19, 10, 10); */
+    /* width: 100%; */
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100%;
+    /* display: flex; */
+    height: 5rem;
+    /* flex-direction: column;S */
+    flex-wrap: wrap;
+    overflow: auto;
+  /* padding: 1rem; */
+  /* border-radius: 1rem; */
+  text-transform: capitalize;
+  }
+  .ans-flex button{
     cursor: pointer;
         /* border: 1px solid white; */
         background-color: transparent;
         height: 3rem;
         width: 3rem;
-        position: relative;
-        top: -8px;
-        left: 6px;
+        /* position: relative; */
+        /* top: -8px; */
+        left: 85%;
         border-radius: 100%;
         color: rgb(255, 102, 0);
         font-size: 2rem;
@@ -183,7 +194,7 @@
         /* font-color: green; */
         box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);}
 
- .answer-div button:hover{
+ .ans-flex button:hover{
     background: orangered;
     color: rgb(3, 0, 0);
   }
@@ -208,12 +219,13 @@
     /* position: fixed; */
     /* border-top: 2px solid rgb(6, 36, 36); */
   }
+  
   .foot-flex{
     display: flex;
     flex-direction: column-reverse;
    /* justify-content: center; */
     /* border: 2px solid red; */
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     /* margin-top: 2rem; */
   }
