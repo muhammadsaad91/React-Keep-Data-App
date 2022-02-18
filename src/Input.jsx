@@ -20,11 +20,17 @@ const change =(e)=>{
     console.log(value)
 }
 const click=()=>{
-    props.clicked(value)
-    setValue({
-        title: '',
-        content: ''
-    });
+    if (value.title === '' || value.content === '') {
+        alert('Please Enter Something in the Inputs');
+        
+    } else {
+        props.clicked(value)
+    
+        setValue({
+            title: '',
+            content: ''
+        });    }
+    
 }
 const shrink=()=>{
     setShow(false);
