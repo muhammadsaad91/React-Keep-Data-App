@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/React-Keep-Data-App/static/css/main.621e8f53.css",
-    "main.js": "/React-Keep-Data-App/static/js/main.9489b526.js",
+    "main.js": "/React-Keep-Data-App/static/js/main.23130cf5.js",
     "index.html": "/React-Keep-Data-App/index.html",
     "main.621e8f53.css.map": "/React-Keep-Data-App/static/css/main.621e8f53.css.map",
-    "main.9489b526.js.map": "/React-Keep-Data-App/static/js/main.9489b526.js.map"
+    "main.23130cf5.js.map": "/React-Keep-Data-App/static/js/main.23130cf5.js.map"
   },
   "entrypoints": [
     "static/css/main.621e8f53.css",
-    "static/js/main.9489b526.js"
+    "static/js/main.23130cf5.js"
   ]
 }
