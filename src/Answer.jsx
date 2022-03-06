@@ -6,6 +6,10 @@ const Answer = (props) => {
     const del=(val)=>{
         props.deleted(props.id)
     }
+    const edit=(val)=>{
+        props.edited(props.id)
+        
+    }
     return(
      <>
     
@@ -20,6 +24,7 @@ const Answer = (props) => {
      <div className="btn-flex">
      </div>  
      </div>    
+     <button onClick={edit}><DeleteForeverOutlined/></button>
      <button onClick={del} ><DeleteForeverOutlined /></button>
      </div>
 

@@ -32,6 +32,8 @@ const click=()=>{
         });    }
     
 }
+
+
 const shrink=()=>{
     setShow(false);
 }
@@ -60,7 +62,7 @@ const expand=()=>{
                     value={value.content} ></textarea>
                     <div className="btn-flex">
 
-                        {show ? <button onClick={click}>+</button> : null}
+                        {show ? toggle? <button onClick={click}>+</button> : <button onClick={click}>🖋</button> : null}
                 </div></div>
             </div>
         </>
